@@ -13,17 +13,14 @@ active
   eosio.code@active
 minority (9/25)
 ```
-
 **Function**
 
 - transfer fund to escrow.bos for each proposal
 - transfer stipend to betchair.bos
 - transfer fund for bet operation, developers, auditors to betchair.bos
 
-### betchair.bos`
-
+### betchair.bos
 **Permission**
-
 ```
 owner (bet.bos@active)
 active (yves@active)
