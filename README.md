@@ -196,9 +196,9 @@ I {{regbetcand}}, have consented to act as a BOS Executive Team member, and I ag
 
 ***Support***  – I DECLARE to abide by decisions of the Board even though I may disagree, but I reserve the right to express my own views to my community upon non-confidential issues.
 
-*** Defamation***  – I DECLARE not to make erroneous or defamatory statements about the Board.
+***Defamation***  – I DECLARE not to make erroneous or defamatory statements about the Board.
 
-***Agreement ***  I hereby agree to comply with the provisions set out in this BET Members’ Code of Ethics.
+***Agreement***  I hereby agree to comply with the provisions set out in this BET Members’ Code of Ethics.
 
 
 
