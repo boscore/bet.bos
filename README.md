@@ -25,7 +25,7 @@ minority (9/25)
 owner (bet.bos@active)
 active (yves@active)
 ```
-**Function**
+**Function**  
 distribute stipend to each bet member every 3 months
 
 # Part II：ACTION Design
