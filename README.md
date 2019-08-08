@@ -15,9 +15,9 @@ minority (9/25)
 ```
 **Function**
 
-- transfer fund to escrow.bos for each proposal
+- transfer fund to escrow.bos for each proposal 
 - transfer stipend to betchair.bos
-- transfer fund for bet operation, developers, auditors to betchair.bos
+- transfer fund for bet operation(0.8%), developers/infrastructure(0.15% inflation), auditors(0.05%)
 
 ### betchair.bos
 **Permission**
@@ -26,7 +26,8 @@ owner (bet.bos@active)
 active (yves@active)
 ```
 **Function**  
-distribute stipend to each bet member every 3 months
+- distribute stipend to each bet member every 3 months
+ 
 
 # Part II：ACTION Design
 ## regbetcand [declaration]
