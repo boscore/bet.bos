@@ -92,7 +92,7 @@ Permission: `bet.bos@minority` (minority decision)
 Parameters:
 
 ```
-name  betmember  //majority decision
+name  betmember  //minority decision
 ```
 
 
