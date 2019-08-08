@@ -27,10 +27,6 @@ active (yves@active)
 ```
 **Function**
 distribute stipend to each bet member every 3 months
-distribute fund for bet operations  (0.8% inflation)
-distribute fund for developers/infrastructure (0.15% inflation)
-distribute fund for auditors (0.05% inflation)
-
 
 # Part II：ACTION Design
 ## regbetcand [declaration]
