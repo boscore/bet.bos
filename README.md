@@ -21,7 +21,7 @@ minority
 - transfer stipend to betchair.bos
 - transfer fund for bet operation(0.8%), developers/infrastructure(0.15% inflation), auditors(0.05%)
 
-### betchair.bos
+### `betchair.bos`
 **Permission**
 ```
 owner 
