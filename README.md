@@ -7,11 +7,13 @@ bet: BOS Executive Team
 **Permission**
 
 ```
-owner (eosio@active)
+owner 
+  eosio@active      (1/1)
 active
-  (13/25)
+  [25 BET]          (13/25)
   eosio.code@active
-minority (9/25)
+minority 
+  [25 BET]          (9/25)
 ```
 **Function**
 
@@ -22,8 +24,13 @@ minority (9/25)
 ### betchair.bos
 **Permission**
 ```
-owner (bet.bos@active)
-active (yves@active)
+owner 
+     bet.bos@active   (1/1)
+active 
+     chair@active     (1/2)
+     vicechair@active (1/2)
+     bet.bos@active   (1/2)
+
 ```
 **Function**  
 - distribute stipend to each bet member every 3 months
