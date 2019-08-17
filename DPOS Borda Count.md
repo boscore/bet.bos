@@ -8,7 +8,7 @@ In this regard, BOS follows the EOS voting mechanism. That is a one-vote multi-s
 
 ## II.  Proof of Stake mechanism and Voting:
 
-\1. There are many articles about the Proof of Stake mechanism. There is no more detailed discussion here. Only the discussion of Block Producer concentration and security is discussed. For the sake of discussion, we simplify the above. We assume that all voting rights are from voters, simplifying the original model as a probability discovery model, then we assume that a holder's shareholding ratio is Q, secret cheating function H, cheating is found after loss function F(Q), maintaining system stability. The general return function is X(Q), the cheating gain is W, the hypothetical function here is only used for qualitative analysis, so we can simply get the strategic relationship of the stakeholder:
+1. There are many articles about the Proof of Stake mechanism. There is no more detailed discussion here. Only the discussion of Block Producer concentration and security is discussed. For the sake of discussion, we simplify the above. We assume that all voting rights are from voters, simplifying the original model as a probability discovery model, then we assume that a holder's shareholding ratio is Q, secret cheating function H, cheating is found after loss function F(Q), maintaining system stability. The general return function is X(Q), the cheating gain is W, the hypothetical function here is only used for qualitative analysis, so we can simply get the strategic relationship of the stakeholder:
 
 Judging the relationship between W+(H-1)*F(Q) and X(Q) and determining the corresponding strategy. Because F is a positive correlation function of Q, X is also a positive correlation function of Q, and W is a random parameter with speculation. So it can be concluded that the cheating gain will be significantly reduced with the increase of Q, under the assumption of rational natural person. 
 
@@ -94,7 +94,7 @@ In other words, the Borda score method is also unstable. So where is the problem
 
 So under this assumption, Saari proves that the Borda Count election process is "fair" on the premise of more than two candidates! For specific technical details, please refer to [Saari's related papers](https://en.wikipedia.org/wiki/Donald_G._Saari#Papers). In other words, the Borda Count election process is better in this sense. Therefore, we try to adapt the BET voting system with the PoS system under this conclusion.
 
-## III.BET voting system.
+## III.BET voting system.   
 
 Next we will give a general description of the voting system:
 
@@ -102,17 +102,17 @@ It is assumed that the number of people participating in the election is N, K pe
 
 Our voting rules are as follows:
 
-\1. For any voter, it is required to give a sequence Ln of the order in which the candidates fit or not.
+1. For any voter, it is required to give a sequence Ln of the order in which the candidates fit or not.
 
-\2. The voter's voting weight is recorded as the number of tokens held and mortgaged by Pi.
+2. The voter's voting weight is recorded as the number of tokens held and mortgaged by Pi.
 
-\3. Given a function F(i), the function returns a score for the different sequence numbers of the sequence. The specific function will be given below.
+3. Given a function F(i), the function returns a score for the different sequence numbers of the sequence. The specific function will be given below.
 
-\4. The rules for scoring any candidate are as follows:
+4. The rules for scoring any candidate are as follows:
 
 Vk=∑F(i,j)*Pi
 
-\5. Sort all candidates who participated in the election and draw the final selection sequence.
+5. Sort all candidates who participated in the election and draw the final selection sequence.
 
 Assumptions:
 
@@ -120,13 +120,13 @@ In this program, we limit each voter, assuming that any voter can vote for the n
 
 Of course, we can also follow the Borda count system exactly as follows:
 
-\1. Require each voting participant to mortgage the corresponding token,
+1. Require each voting participant to mortgage the corresponding token,
 
-\2. Require it to give the corresponding selection sequence Ln
+2. Require it to give the corresponding selection sequence Ln
 
-\3. Given a function F(i), the function returns a score for the different sequence numbers of the sequence. The specific function will be given below.
+3. Given a function F(i), the function returns a score for the different sequence numbers of the sequence. The specific function will be given below.
 
-\4. The rules for scoring any candidate are as follows:
+4. The rules for scoring any candidate are as follows:
 
 Vk=∑F(i,j)
 
@@ -150,11 +150,11 @@ Although not rigorous, you can intuitively feel the difference between them.
 
 Next, we will illustrate the features and advantages of the program through a few simple examples:
 
-\1. Suppose there are three voters A, B, and C. For the sake of discussion, let's assume that the candidates are the same three, and assume that they vote for themselves. Our voting principle is to choose two of the three to win.
+1. Suppose there are three voters A, B, and C. For the sake of discussion, let's assume that the candidates are the same three, and assume that they vote for themselves. Our voting principle is to choose two of the three to win.
 
 We assume that A, B, and C hold the number of tokens a, b, and c, respectively. If we assume conspiracy in a and b, if EOS's current voting system is adopted, c will lose the final right as long as a+b>c. But under the BET system, you need a+2b>2c to get the corresponding result. In the case where the differences among the candidates are not different, a and c can be elected.
 
-\2. Consider another example of bribery. Let's assume that there is a large A with 2,000,000 tokens. The support of other candidates is only between 1,000,000 and 6,000,000. If the EOS strategy is adopted, then the other candidates cannot agree. Under the premise, A can control the entire order of the elected person. Due to the strong control of A, many candidates will choose to trade with A, which will eventually lead to the further strengthening of A's control.
+2. Consider another example of bribery. Let's assume that there is a large A with 2,000,000 tokens. The support of other candidates is only between 1,000,000 and 6,000,000. If the EOS strategy is adopted, then the other candidates cannot agree. Under the premise, A can control the entire order of the elected person. Due to the strong control of A, many candidates will choose to trade with A, which will eventually lead to the further strengthening of A's control.
 
 For the BET system, the situation will be different. For example, we use (n+1-i)/n as the F function, n is assumed to be 25, then for the big A, it is for the i support. The contribution value provided by the account is (n+1-i)/n*a. For example, when i is 20, the contribution value is 4,800,000, that is, when there is a token held by the voter in the hand, the token exceeds the value.
 
