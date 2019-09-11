@@ -187,22 +187,35 @@ Update the configuration for the running contract of selected parameters without
 
 <h1 class="contract">registercand</h1>
 
-### V1.0 Bet’s Declaration of Independence and Impartiality
+### V1.0 BET's Declaration of Independence and Impartiality
 
 I, {{ registercand }}, accept to serve as Bet, in accordance with the BOS Rules.
 
-I
-**DECLARE** to be and to intend to remain independent and impartial during the auditing procedure.
+I have consented to act as a BOS Executive Team member, and I agree to comply with the following BET Members’ Code of Ethics throughout my term as a member:
 
-**DECLARE** that, to my knowledge, there are no facts, circumstances or relationships which may affect my independence and impartiality.
+**Honesty and Good Faith** – I will act honestly and in good faith. I will do nothing to violate the trust of the community I serve.
 
-**DECLARE** to treat all BOS members fairly, reward contributions appropriately and not seek unmerited profits. No member should have less or more information about an auditing decision than others.
 
-**DECLARE** not to seek any stake in, or exert undue influence over, other block producers and shall take appropriate measures to protect my own independence and impartiality.
+**Care, Diligence and Skill** – I will exercise the degree of care, diligence and skill of a reasonably prudent person in comparable circumstances. I will make a concerted effort to attend all scheduled BET meetings. I will act responsibly and with due diligence to become familiar with the affairs of the BOS ecosystem.
 
-## Description
 
-The intent of {{ registercand }} is to registers a candidate to bet election, Accounts must register as a candidate before they can be voted for. The candidate must lock a configurable number of tokens before trying to register (configurable via {{ updateconfig }} in the parameter lockupasset which will be sent from the token contract as defined and set in the code of the contract. If a user previously been a candidate they may have enough staked tokens to not require further staking but will otherwise need to transfer the difference to meet the required stake.
+**Conflict of Interest** – I am not currently aware of any actual or potential conflict of interest with respect to the BOS BET team or any matter detrimental to BOS. If I become aware of any conflict, I will immediately disclose it to the Chairpersons. I will not promote my own interests or those of any friend to the detriment of the BOS ecosystem. I will not seek any special benefits or privileges as a BET member. I will act only in the best interests of the BOS ecosystem as a whole and I will not favour the interests of any individual or group of token holders.
+
+
+**Confidentiality** – I will not disclose to any person information decided by the BOS BET members to be confidential or privileged or which reasonably ought to be deemed confidential. When in doubt, I will request determination by a resolution of the Board.
+
+
+**Good Conduct** – At all times, I will conduct myself in a professional and businesslike manner at meetings of the Board. I will approach all Board issues with an open mind, preparing to make the best decisions on behalf of the BOS ecosystem. I will act ethically with integrity. I will deal with others in a respectful manner.
+ 
+**Support** – I will abide by decisions of the Board even though I may disagree, but I reserve the right to express my own views to my community upon non-confidential issues.
+
+
+**Defamation** – I will not make erroneous or defamatory statements about the Board.
+
+
+**Agreement –** I hereby agree to comply with the provisions set out in this BET Members’ Code of Ethics.
+
+ 
 
 <h1 class="contract">withdrawcand</h1>
 
