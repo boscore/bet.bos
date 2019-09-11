@@ -12,11 +12,11 @@ If an elected bet resigns via the `withdrawcand` during a period a new candidate
 
 > Nominate Candidate
 
-> Must `eosio::transfer` BOS tokens at a minimum of `lockupasset` (100.0000 BOS).
+> Must `eosio::transfer` BOS tokens at a minimum of `lockupasset` (10000.0000 BOS).
 > Once candidate has meet the minimum locked tokens threshold, they will be automatically set as an active candidate able to receive votes from BOS users.
 
 ```bash
-$ bosc transfer <CANDIDATE> bet.bos "100.0000 BOS" -m "stake for bet.bos"
+$ bosc transfer <CANDIDATE> bet.bos "10000.0000 BOS" -m "stake for bet.bos"
 ```
 OR
 ```bash
