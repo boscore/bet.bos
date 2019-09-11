@@ -1,0 +1,19 @@
+{
+  "main": "src/betbos.cpp",
+  "contract": "betbos",
+  "include": "include",
+  "cdt": "",
+  "output": "",
+  "scripts": {
+    "build": ""
+  },
+  "deploy": {
+    "mainnet": "",
+    "kylin": "",
+    "jungle": "",
+    "local": ""
+  },
+  "test": {
+    "npmClient": ""
+  }
+}

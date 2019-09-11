@@ -1,0 +1,386 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "bets_row",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet_name",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "bios_row",
+            "base": "",
+            "fields": [
+                {
+                    "name": "candidate_name",
+                    "type": "name"
+                },
+                {
+                    "name": "bio",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "candidates_row",
+            "base": "",
+            "fields": [
+                {
+                    "name": "candidate_name",
+                    "type": "name"
+                },
+                {
+                    "name": "locked_tokens",
+                    "type": "asset"
+                },
+                {
+                    "name": "total_votes",
+                    "type": "uint64"
+                },
+                {
+                    "name": "is_active",
+                    "type": "bool"
+                },
+                {
+                    "name": "unstaking_end_time_stamp",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "cleancand",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "cleanvoter",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "contr_config",
+            "base": "",
+            "fields": [
+                {
+                    "name": "lockupasset",
+                    "type": "asset"
+                },
+                {
+                    "name": "maxvotes",
+                    "type": "uint8"
+                },
+                {
+                    "name": "numelected",
+                    "type": "uint8"
+                },
+                {
+                    "name": "authaccount",
+                    "type": "name"
+                },
+                {
+                    "name": "auth_threshold_bets",
+                    "type": "uint8"
+                },
+                {
+                    "name": "lockup_release_time_delay",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "firebet",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "firecand",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "newtenure",
+            "base": "",
+            "fields": [
+                {
+                    "name": "candidates",
+                    "type": "name[]"
+                },
+                {
+                    "name": "message",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "registercand",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "resign",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bet",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "unstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "unvote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "updatebio",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                },
+                {
+                    "name": "bio",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updateconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "newconfig",
+                    "type": "contr_config"
+                }
+            ]
+        },
+        {
+            "name": "vote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                },
+                {
+                    "name": "candidates",
+                    "type": "name[]"
+                },
+                {
+                    "name": "vote_json",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "votejson_row",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                },
+                {
+                    "name": "vote_json",
+                    "type": "string"
+                },
+                {
+                    "name": "updated_at",
+                    "type": "time_point_sec"
+                }
+            ]
+        },
+        {
+            "name": "votes_row",
+            "base": "",
+            "fields": [
+                {
+                    "name": "voter",
+                    "type": "name"
+                },
+                {
+                    "name": "proxy",
+                    "type": "name"
+                },
+                {
+                    "name": "staked",
+                    "type": "uint64"
+                },
+                {
+                    "name": "candidates",
+                    "type": "name[]"
+                }
+            ]
+        },
+        {
+            "name": "withdrawcand",
+            "base": "",
+            "fields": [
+                {
+                    "name": "cand",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "cleancand",
+            "type": "cleancand",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cleanvoter",
+            "type": "cleanvoter",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "firebet",
+            "type": "firebet",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "firecand",
+            "type": "firecand",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "newtenure",
+            "type": "newtenure",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "registercand",
+            "type": "registercand",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "resign",
+            "type": "resign",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unstake",
+            "type": "unstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "unvote",
+            "type": "unvote",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updatebio",
+            "type": "updatebio",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updateconfig",
+            "type": "updateconfig",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "vote",
+            "type": "vote",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "withdrawcand",
+            "type": "withdrawcand",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "bets",
+            "type": "bets_row",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "bios",
+            "type": "bios_row",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "candidates",
+            "type": "candidates_row",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "config",
+            "type": "contr_config",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "votejson",
+            "type": "votejson_row",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "votes",
+            "type": "votes_row",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}

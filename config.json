@@ -1,0 +1,8 @@
+{
+    "auth_threshold_bets": 1,
+    "authaccount": "bet.bos",
+    "lockup_release_time_delay": 3600,
+    "lockupasset": "10000.0000 BOS",
+    "maxvotes": 25,
+    "numelected": 25
+}
