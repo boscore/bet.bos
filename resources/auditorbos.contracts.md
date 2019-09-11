@@ -35,9 +35,9 @@ Update the configuration for the running contract of selected parameters without
 
 <h1 class="contract">registercand</h1>
 
-### V1.0 Auditor’s Declaration of Independence and Impartiality
+### V1.0 Bet’s Declaration of Independence and Impartiality
 
-I, {{ registercand }}, accept to serve as Auditor, in accordance with the BOS Rules.
+I, {{ registercand }}, accept to serve as Bet, in accordance with the BOS Rules.
 
 I
 **DECLARE** to be and to intend to remain independent and impartial during the auditing procedure.

@@ -1,4 +1,4 @@
-# `bet.bos` - BOS Auditor Elections Contract
+# `bet.bos` - BOS Bet Elections Contract
 
 This contract will be in charge of bet registration and voting for BOS bets.
 
@@ -25,7 +25,7 @@ $ bosc tx create bet.bos registercand '{"cand": "<CANDIDATE NAME>"}' -p <CANDIDA
 
 ### ACTION `vote`
 
-> Vote for Auditor Candidate
+> Vote for Bet Candidate
 
 ```
 $ bosc tx create bet.bos vote '{"voter":"<VOTER>","newvotes":["<CANDIDATE_1>", "<CANDIDATE_2>","<CANDIDATE_3>"], "vote_json":""}' -p deniscarrier
@@ -50,17 +50,17 @@ $ bosc tx create bet.bos unstake '{"cand":"<CANDIDATE>"}' -p <CANDIDATE>
 
 ### ACTION `resign`
 
-> Resign as Auditor
+> Resign as Bet
 
 > Removes elected bet from `bet.bos@bets`
 
 ```
-$ bosc tx create bet.bos resign '{"bet":"<AUDITOR>"}' -p <AUDITOR>
+$ bosc tx create bet.bos resign '{"bet":"<BET>"}' -p <BET>
 ```
 
 ### ACTION `newtenure`
 
-> Start Auditor Tenure (Election)
+> Start Bet Tenure (Election)
 
 > `bet.bos@bets` permission will `updateauth` with candidates with the highest votes
 
@@ -70,18 +70,18 @@ $ bosc tx create bet.bos newtenure '{"candidates": ["<CANDIDATE 1>", "<CANDIDATE
 
 ### ACTION `firebet`
 
-> Removes Auditor from `bet.bos@bets` authority
+> Removes Bet from `bet.bos@bets` authority
 
 ```bash
-$ bosc tx create bet.bos firebet '{"bet": "<AUDITOR NAME>"}' -p bet.bos@active
+$ bosc tx create bet.bos firebet '{"bet": "<BET NAME>"}' -p bet.bos@active
 ```
 
 ### ACTION `resign`
 
-> Removes Auditor from `bet.bos@bets` authority
+> Removes Bet from `bet.bos@bets` authority
 
 ```bash
-$ bosc tx create bet.bos resign '{"bet": "<AUDITOR NAME>"}' -p <AUDITOR NAME>@active
+$ bosc tx create bet.bos resign '{"bet": "<BET NAME>"}' -p <BET NAME>@active
 ```
 
 ### ACTION `cleancand`
@@ -187,9 +187,9 @@ Update the configuration for the running contract of selected parameters without
 
 <h1 class="contract">registercand</h1>
 
-### V1.0 Auditor’s Declaration of Independence and Impartiality
+### V1.0 Bet’s Declaration of Independence and Impartiality
 
-I, {{ registercand }}, accept to serve as Auditor, in accordance with the BOS Rules.
+I, {{ registercand }}, accept to serve as Bet, in accordance with the BOS Rules.
 
 I
 **DECLARE** to be and to intend to remain independent and impartial during the auditing procedure.

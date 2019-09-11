@@ -61,7 +61,7 @@ void betbos::set_bet_auths() {
            "eosio"_n, "updateauth"_n,
            std::make_tuple(
                    account_to_change,
-                   AUDITORS_PERMISSION,
+                   BETBOS_PERMISSION,
                    "active"_n,
                    bets_contract_authority))
             .send();

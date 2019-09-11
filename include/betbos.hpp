@@ -8,7 +8,7 @@
 #include "voter_info.hpp"
 
 const name TOKEN_CONTRACT = "eosio.token"_n;
-const name AUDITORS_PERMISSION = "bets"_n;
+const name BETBOS_PERMISSION = "bets"_n;
 
 using namespace eosio;
 using namespace std;

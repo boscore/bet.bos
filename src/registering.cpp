@@ -62,7 +62,7 @@ void betbos::firebet( const name bet ) {
 
 void betbos::remove_bet( const name bet ) {
     const auto bet_itr = _bets.find(bet.value);
-    check(bet_itr != _bets.end(), "ERR::REMOVEAUDITOR_NOT_CURRENT_AUDITOR::The entered account name is not for a current bet.");
+    check(bet_itr != _bets.end(), "ERR::REMOVEBET_NOT_CURRENT_BET::The entered account name is not for a current bet.");
 
     // Remove bet from the bets table.
     _bets.erase(bet_itr);

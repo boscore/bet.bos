@@ -5,7 +5,7 @@ void betbos::assertPeriodTime() {
                  "ERR::NEWTENURE_EARLY::New period is being called too soon. Wait until the period has completed.");
 }
 
-void betbos::allocateAuditors(bool early_election) {
+void betbos::allocateBets(bool early_election) {
 
     eosio::print("Configure bets for the next period.");
 
@@ -14,7 +14,7 @@ void betbos::allocateAuditors(bool early_election) {
     auto cand_itr = byvotes.begin();
 
     int32_t electcount = configs().numelected;
-    uint8_t currentAuditorCount = 0;
+    uint8_t currentBetCount = 0;
 
     if (!early_election) {
         eosio::print("Empty the bets table to get a full set of new bets based on the current votes.");
@@ -30,9 +30,9 @@ void betbos::allocateAuditors(bool early_election) {
     }
 
     eosio::print("Select only enough candidates to fill the gaps.");
-    for (auto itr = bets.begin(); itr != bets.end(); itr++) { ++currentAuditorCount; }
+    for (auto itr = bets.begin(); itr != bets.end(); itr++) { ++currentBetCount; }
 
-    while (currentAuditorCount < electcount) {
+    while (currentBetCount < electcount) {
         if (cand_itr == byvotes.end() || cand_itr->total_votes == 0) {
             eosio::print("The pool of eligible candidates has been exhausted");
             return;
@@ -52,13 +52,13 @@ void betbos::allocateAuditors(bool early_election) {
                     c.bet_end_time_stamp = time_point_sec(now() + configs().lockup_release_time_delay);
             });
 
-            currentAuditorCount++;
+            currentBetCount++;
             cand_itr++;
         }
     }
 }
 
-void betbos::setAuditorAuths() {
+void betbos::setBetAuths() {
 
     bets_table bets(_self, _self.value);
 
@@ -84,7 +84,7 @@ void betbos::setAuditorAuths() {
            "eosio"_n, "updateauth"_n,
            std::make_tuple(
                    accountToChange,
-                   AUDITORS_PERMISSION,
+                   BETBOS_PERMISSION,
                    "active"_n,
                    bets_contract_authority))
             .send();
@@ -129,10 +129,10 @@ void betbos::newtenure(string message) {
                  "ERR::NEWTENURE_VOTER_ENGAGEMENT_LOW_PROCESS::Voter engagement is insufficient to process a new period");
 
     // Set bets for the next period.
-    allocateAuditors(false);
+    allocateBets(false);
 
     // Set the auths on the BOS bet authority account
-    setAuditorAuths();
+    setBetAuths();
 
     _currentState.lastperiodtime = now();
 
