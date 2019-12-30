@@ -160,4 +160,5 @@ For the BET system, the situation will be different. For example, we use (n+1-i)
 
 Choosing to work with this token holder is a better strategy than working with A. Therefore, this can weaken the control power of A to a certain extent and at the same time ensure the interests of many stakeholders. At the same time, because the plan is necessary to fill the gap, the voter is maximizing the profit for the benefit of the rational person. In addition to yourself, the remaining votes will be voted for the most stable candidates for the system, thus ensuring the security and stability of the system.
 
-# IV. Summary**The design is a further exploration of the existing EOS voting system, with the research results of Saari et al., which can make the BET voting system more perfect, but as the Arrow impossible theorem says, when it is limited to certain conditions, the perfect voting plan does not exist. So we hope to better the current model under reasonable assumptions.
+# IV. Summary
+The design is a further exploration of the existing EOS voting system, with the research results of Saari et al., which can make the BET voting system more perfect, but as the Arrow impossible theorem says, when it is limited to certain conditions, the perfect voting plan does not exist. So we hope to better the current model under reasonable assumptions.
